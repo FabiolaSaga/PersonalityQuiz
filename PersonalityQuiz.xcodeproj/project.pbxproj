@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B86688D577BBFA7AAB24CB4E /* Pods_PersonalityQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C12D56DEE934ADFF7F49D03 /* Pods_PersonalityQuiz.framework */; };
 		F3617CBC2228AFEC007E4D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CBB2228AFEC007E4D3E /* AppDelegate.swift */; };
-		F3617CBE2228AFEC007E4D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CBD2228AFEC007E4D3E /* ViewController.swift */; };
+		F3617CBE2228AFEC007E4D3E /* StartviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CBD2228AFEC007E4D3E /* StartviewController.swift */; };
 		F3617CC12228AFEC007E4D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3617CBF2228AFEC007E4D3E /* Main.storyboard */; };
 		F3617CC32228AFED007E4D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3617CC22228AFED007E4D3E /* Assets.xcassets */; };
 		F3617CC62228AFED007E4D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3617CC42228AFED007E4D3E /* LaunchScreen.storyboard */; };
+		F3617CD02228FA70007E4D3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CCF2228FA70007E4D3E /* LoginViewController.swift */; };
+		F3617CD22228FA94007E4D3E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CD12228FA94007E4D3E /* SignUpViewController.swift */; };
+		F3617CD42228FAB1007E4D3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CD32228FAB1007E4D3E /* HomeViewController.swift */; };
+		F3617CD62228FC2B007E4D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3617CD52228FC2B007E4D3E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C617C69F92A782C042FB222 /* Pods-PersonalityQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalityQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalityQuiz/Pods-PersonalityQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		4C12D56DEE934ADFF7F49D03 /* Pods_PersonalityQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalityQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A735F34034B779FA2246CB5 /* Pods-PersonalityQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalityQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalityQuiz/Pods-PersonalityQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		F3617CB82228AFEC007E4D3E /* PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3617CBB2228AFEC007E4D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3617CBD2228AFEC007E4D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3617CBD2228AFEC007E4D3E /* StartviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartviewController.swift; sourceTree = "<group>"; };
 		F3617CC02228AFEC007E4D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3617CC22228AFED007E4D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3617CC52228AFED007E4D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3617CC72228AFED007E4D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3617CCF2228FA70007E4D3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3617CD12228FA94007E4D3E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F3617CD32228FAB1007E4D3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3617CD52228FC2B007E4D3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86688D577BBFA7AAB24CB4E /* Pods_PersonalityQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75E740049D9FBBDC421EB35C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C12D56DEE934ADFF7F49D03 /* Pods_PersonalityQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F7AC348E46AF481A3B74BA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A735F34034B779FA2246CB5 /* Pods-PersonalityQuiz.debug.xcconfig */,
+				1C617C69F92A782C042FB222 /* Pods-PersonalityQuiz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F3617CAF2228AFEC007E4D3E = {
 			isa = PBXGroup;
 			children = (
 				F3617CBA2228AFEC007E4D3E /* PersonalityQuiz */,
 				F3617CB92228AFEC007E4D3E /* Products */,
+				9F7AC348E46AF481A3B74BA2 /* Pods */,
+				75E740049D9FBBDC421EB35C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				F3617CBB2228AFEC007E4D3E /* AppDelegate.swift */,
-				F3617CBD2228AFEC007E4D3E /* ViewController.swift */,
+				F3617CBD2228AFEC007E4D3E /* StartviewController.swift */,
 				F3617CBF2228AFEC007E4D3E /* Main.storyboard */,
+				F3617CD32228FAB1007E4D3E /* HomeViewController.swift */,
+				F3617CD12228FA94007E4D3E /* SignUpViewController.swift */,
+				F3617CCF2228FA70007E4D3E /* LoginViewController.swift */,
 				F3617CC22228AFED007E4D3E /* Assets.xcassets */,
 				F3617CC42228AFED007E4D3E /* LaunchScreen.storyboard */,
 				F3617CC72228AFED007E4D3E /* Info.plist */,
+				F3617CD52228FC2B007E4D3E /* GoogleService-Info.plist */,
 			);
 			path = PersonalityQuiz;
 			sourceTree = "<group>";
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3617CCA2228AFED007E4D3E /* Build configuration list for PBXNativeTarget "PersonalityQuiz" */;
 			buildPhases = (
+				329E371784EDC7C01A155AA4 /* [CP] Check Pods Manifest.lock */,
 				F3617CB42228AFEC007E4D3E /* Sources */,
 				F3617CB52228AFEC007E4D3E /* Frameworks */,
 				F3617CB62228AFEC007E4D3E /* Resources */,
+				8626078F72B1A640C4C9B374 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,17 +163,72 @@
 				F3617CC62228AFED007E4D3E /* LaunchScreen.storyboard in Resources */,
 				F3617CC32228AFED007E4D3E /* Assets.xcassets in Resources */,
 				F3617CC12228AFEC007E4D3E /* Main.storyboard in Resources */,
+				F3617CD62228FC2B007E4D3E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329E371784EDC7C01A155AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersonalityQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8626078F72B1A640C4C9B374 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalityQuiz/Pods-PersonalityQuiz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalityQuiz/Pods-PersonalityQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3617CB42228AFEC007E4D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3617CBE2228AFEC007E4D3E /* ViewController.swift in Sources */,
+				F3617CD42228FAB1007E4D3E /* HomeViewController.swift in Sources */,
+				F3617CD02228FA70007E4D3E /* LoginViewController.swift in Sources */,
+				F3617CBE2228AFEC007E4D3E /* StartviewController.swift in Sources */,
+				F3617CD22228FA94007E4D3E /* SignUpViewController.swift in Sources */,
 				F3617CBC2228AFEC007E4D3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +373,7 @@
 		};
 		F3617CCB2228AFED007E4D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A735F34034B779FA2246CB5 /* Pods-PersonalityQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +392,7 @@
 		};
 		F3617CCC2228AFED007E4D3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C617C69F92A782C042FB222 /* Pods-PersonalityQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

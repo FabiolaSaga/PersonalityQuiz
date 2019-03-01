@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,21 +74,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="v2B-uH-Hcj"/>
+                    <connections>
+                        <segue destination="2Md-Ob-XN8" kind="show" id="W65-Dd-atH"/>
+                        <segue destination="Sja-H1-G2n" kind="show" id="QOm-or-q5o"/>
+                        <segue destination="FiY-gE-FOt" kind="show" id="7dN-LZ-5XO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="160.56971514242881"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dFB-YB-Aki">
             <objects>
-                <viewController id="2Md-Ob-XN8" sceneMemberID="viewController">
+                <viewController id="2Md-Ob-XN8" customClass="LoginViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h7o-PK-iWt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-Jp-aZb" userLabel="Login View">
-                                <rect key="frame" x="68" y="166" width="239" height="184"/>
+                                <rect key="frame" x="68" y="210" width="239" height="184"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zZ-aL-x2C" userLabel="Login View">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="184"/>
@@ -149,21 +154,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="twy-Ke-7Mp"/>
                     </view>
+                    <connections>
+                        <segue destination="FiY-gE-FOt" kind="show" id="gL4-kT-8bf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nig-bW-SAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2167.1999999999998" y="-233.43328335832086"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="7ww-Pf-B84">
             <objects>
-                <viewController id="Sja-H1-G2n" sceneMemberID="viewController">
+                <viewController id="Sja-H1-G2n" customClass="SignUpViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udO-pX-mgr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0mV-yw-tV2" userLabel="Login View">
-                                <rect key="frame" x="68" y="166" width="239" height="184"/>
+                                <rect key="frame" x="68" y="210" width="239" height="184"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-7g-F1z" userLabel="Login View">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="184"/>
@@ -230,15 +238,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="76s-ER-ci3"/>
                     </view>
+                    <connections>
+                        <segue destination="FiY-gE-FOt" kind="show" id="cq8-R7-qK6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9p-uQ-PLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2167.1999999999998" y="554.57271364317842"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="z14-4f-WeA">
             <objects>
-                <viewController id="FiY-gE-FOt" sceneMemberID="viewController">
+                <viewController id="FiY-gE-FOt" customClass="HomeViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="09S-ro-kxV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,4 +392,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="160.56971514242881"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7dN-LZ-5XO"/>
+    </inferredMetricsTieBreakers>
 </document>
