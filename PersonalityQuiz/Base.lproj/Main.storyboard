@@ -34,6 +34,9 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="2Md-Ob-XN8" kind="show" id="NYC-rK-u79"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -55,6 +58,9 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Sja-H1-G2n" kind="show" id="1HI-dV-Vfu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -75,9 +81,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="v2B-uH-Hcj"/>
                     <connections>
-                        <segue destination="2Md-Ob-XN8" kind="show" id="W65-Dd-atH"/>
-                        <segue destination="Sja-H1-G2n" kind="show" id="QOm-or-q5o"/>
-                        <segue destination="FiY-gE-FOt" kind="show" id="7dN-LZ-5XO"/>
+                        <outlet property="login" destination="8KF-oM-gAi" id="fPq-4p-O1o"/>
+                        <outlet property="signUp" destination="aCI-WU-Iq4" id="6qJ-pO-IgW"/>
+                        <segue destination="2Md-Ob-XN8" kind="show" identifier="login" id="W65-Dd-atH"/>
+                        <segue destination="Sja-H1-G2n" kind="show" identifier="signUp" id="QOm-or-q5o"/>
+                        <segue destination="FiY-gE-FOt" kind="show" identifier="alreadyLoggedIn" id="7dN-LZ-5XO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,7 +106,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zZ-aL-x2C" userLabel="Login View">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="184"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPB-CG-WFM">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPB-CG-WFM">
                                                 <rect key="frame" x="8" y="64" width="223" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="223" id="5hf-JL-xin"/>
@@ -106,9 +114,9 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxQ-tD-wws">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dxQ-tD-wws">
                                                 <rect key="frame" x="8" y="13" width="223" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Grp-zb-gH8"/>
@@ -128,6 +136,9 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginAction:" destination="2Md-Ob-XN8" eventType="touchUpInside" id="pVL-FJ-9aa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -155,7 +166,9 @@
                         <viewLayoutGuide key="safeArea" id="twy-Ke-7Mp"/>
                     </view>
                     <connections>
-                        <segue destination="FiY-gE-FOt" kind="show" id="gL4-kT-8bf"/>
+                        <outlet property="email" destination="dxQ-tD-wws" id="fkV-Vr-e0l"/>
+                        <outlet property="password" destination="iPB-CG-WFM" id="kEo-iM-jql"/>
+                        <segue destination="FiY-gE-FOt" kind="show" identifier="loginToHome" id="gL4-kT-8bf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nig-bW-SAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,9 +216,12 @@
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpAction:" destination="Sja-H1-G2n" eventType="touchUpInside" id="peE-BX-BRW"/>
+                                                </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dML-Af-29p">
-                                                <rect key="frame" x="7" y="115" width="223" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dML-Af-29p">
+                                                <rect key="frame" x="8" y="115" width="223" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="223" id="ezu-ky-8jW"/>
                                                     <constraint firstAttribute="height" constant="30" id="njf-1F-ZV7"/>
@@ -218,7 +234,9 @@
                                         <constraints>
                                             <constraint firstItem="Js1-ED-HZa" firstAttribute="top" secondItem="oeg-wa-o23" secondAttribute="bottom" constant="21" id="2mf-we-5BD"/>
                                             <constraint firstItem="oeg-wa-o23" firstAttribute="top" secondItem="Vy2-7g-F1z" secondAttribute="top" constant="13" id="EvA-0c-Lcr"/>
+                                            <constraint firstItem="dML-Af-29p" firstAttribute="centerX" secondItem="Vy2-7g-F1z" secondAttribute="centerX" id="Fap-zd-O2I"/>
                                             <constraint firstItem="Js1-ED-HZa" firstAttribute="centerX" secondItem="Vy2-7g-F1z" secondAttribute="centerX" id="RGX-w7-1ee"/>
+                                            <constraint firstItem="dML-Af-29p" firstAttribute="top" secondItem="Js1-ED-HZa" secondAttribute="bottom" constant="21" id="fgS-Xa-IlY"/>
                                             <constraint firstItem="oeg-wa-o23" firstAttribute="centerX" secondItem="Vy2-7g-F1z" secondAttribute="centerX" id="nVx-G8-hX3"/>
                                         </constraints>
                                     </view>
@@ -239,7 +257,10 @@
                         <viewLayoutGuide key="safeArea" id="76s-ER-ci3"/>
                     </view>
                     <connections>
-                        <segue destination="FiY-gE-FOt" kind="show" id="cq8-R7-qK6"/>
+                        <outlet property="email" destination="oeg-wa-o23" id="Rjh-ZP-a83"/>
+                        <outlet property="password" destination="Js1-ED-HZa" id="ikt-ZY-3YO"/>
+                        <outlet property="passwordConfirm" destination="dML-Af-29p" id="ydU-ZK-GlI"/>
+                        <segue destination="FiY-gE-FOt" kind="show" identifier="signupToHome" id="cq8-R7-qK6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9p-uQ-PLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,7 +288,7 @@
                                         <rect key="frame" x="0.0" y="98" width="250" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jws-Sc-OmK">
-                                                <rect key="frame" x="79" y="5" width="92" height="39"/>
+                                                <rect key="frame" x="69" y="5" width="112" height="39"/>
                                                 <color key="backgroundColor" red="0.0013312070960000001" green="0.11401677740000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="Bev-ad-Jyg"/>
@@ -275,6 +296,7 @@
                                                     <constraint firstAttribute="height" constant="39" id="U6l-pA-7Ku"/>
                                                     <constraint firstAttribute="width" constant="92" id="dAF-ZH-xdh"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <state key="normal" title="Start Quiz">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -302,14 +324,29 @@
                                     <constraint firstAttribute="height" constant="148" id="gN2-6A-ARv"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-29-U99">
+                                <rect key="frame" x="278" y="601" width="81" height="37"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutAction:" destination="FiY-gE-FOt" eventType="touchUpInside" id="7yl-Ua-jEU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dYL-Il-Y46" firstAttribute="centerX" secondItem="09S-ro-kxV" secondAttribute="centerX" id="Q7k-zM-amT"/>
+                            <constraint firstItem="cLW-i1-3la" firstAttribute="bottom" secondItem="ZLo-29-U99" secondAttribute="bottom" constant="29" id="U6o-Oh-SVW"/>
                             <constraint firstItem="dYL-Il-Y46" firstAttribute="centerY" secondItem="09S-ro-kxV" secondAttribute="centerY" id="hyH-pC-lha"/>
+                            <constraint firstItem="cLW-i1-3la" firstAttribute="trailing" secondItem="ZLo-29-U99" secondAttribute="trailing" constant="16" id="vLe-gz-Ocw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cLW-i1-3la"/>
                     </view>
+                    <connections>
+                        <outlet property="logOut" destination="ZLo-29-U99" id="89t-6h-12L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9g-TI-yE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,6 +430,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7dN-LZ-5XO"/>
+        <segue reference="cq8-R7-qK6"/>
+        <segue reference="QOm-or-q5o"/>
+        <segue reference="W65-Dd-atH"/>
     </inferredMetricsTieBreakers>
 </document>
