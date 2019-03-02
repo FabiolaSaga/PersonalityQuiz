@@ -64,7 +64,6 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        calculatePersonalityResult()
         // Do any additional setup after loading the view.
     }
     
@@ -189,17 +188,6 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    func calculatePersonalityResult() {
-        var frequencyOfAnswers: [AnimalType: Int] = [:]
-        
-        let responseTypes = responses.map { $0.type }
-        
-        for response in responseTypes {
-            frequencyOfAnswers[response] = (frequencyOfAnswers[response] ?? 0) + 1
-        }
-        
-        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) -> Bool in return pair1.value > pair2.value})
-        let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
-    }
+    
 
 }

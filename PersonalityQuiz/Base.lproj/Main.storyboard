@@ -610,28 +610,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="or0-1A-3ai">
-                                <rect key="frame" x="119.5" y="291" width="136" height="85"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="or0-1A-3ai">
+                                <rect key="frame" x="16" y="302.5" width="343" height="62.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko3-gL-rWn">
-                                        <rect key="frame" x="0.0" y="0.0" width="136" height="61.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="39"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maS-zI-ccq">
-                                        <rect key="frame" x="0.0" y="61.5" width="136" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="39" width="343" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="maS-zI-ccq" firstAttribute="leading" secondItem="or0-1A-3ai" secondAttribute="leading" id="3aS-gU-EBd"/>
+                                    <constraint firstAttribute="trailing" secondItem="maS-zI-ccq" secondAttribute="trailing" id="947-2n-KSn"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="or0-1A-3ai" firstAttribute="centerY" secondItem="DX7-KV-vg2" secondAttribute="centerY" id="1OI-kF-mVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="or0-1A-3ai" secondAttribute="trailing" id="Gao-p1-r5T"/>
                             <constraint firstItem="or0-1A-3ai" firstAttribute="centerX" secondItem="DX7-KV-vg2" secondAttribute="centerX" id="lpq-OP-Ijd"/>
+                            <constraint firstItem="or0-1A-3ai" firstAttribute="leading" secondItem="DX7-KV-vg2" secondAttribute="leadingMargin" id="oYo-He-zmB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XRh-lY-159"/>
                     </view>
