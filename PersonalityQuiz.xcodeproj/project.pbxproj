@@ -17,6 +17,9 @@
 		F3617CD22228FA94007E4D3E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CD12228FA94007E4D3E /* SignUpViewController.swift */; };
 		F3617CD42228FAB1007E4D3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CD32228FAB1007E4D3E /* HomeViewController.swift */; };
 		F3617CD62228FC2B007E4D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3617CD52228FC2B007E4D3E /* GoogleService-Info.plist */; };
+		F3831F802229D89500001E66 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3831F7F2229D89500001E66 /* QuestionViewController.swift */; };
+		F3831F822229D89D00001E66 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3831F812229D89D00001E66 /* ResultsViewController.swift */; };
+		F3831F84222AAF2400001E66 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3831F83222AAF2400001E66 /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		F3617CD12228FA94007E4D3E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F3617CD32228FAB1007E4D3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3617CD52228FC2B007E4D3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3831F7F2229D89500001E66 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		F3831F812229D89D00001E66 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F3831F83222AAF2400001E66 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,9 @@
 				F3617CBB2228AFEC007E4D3E /* AppDelegate.swift */,
 				F3617CBD2228AFEC007E4D3E /* StartviewController.swift */,
 				F3617CBF2228AFEC007E4D3E /* Main.storyboard */,
+				F3831F83222AAF2400001E66 /* QuestionData.swift */,
+				F3831F7F2229D89500001E66 /* QuestionViewController.swift */,
+				F3831F812229D89D00001E66 /* ResultsViewController.swift */,
 				F3617CD32228FAB1007E4D3E /* HomeViewController.swift */,
 				F3617CD12228FA94007E4D3E /* SignUpViewController.swift */,
 				F3617CCF2228FA70007E4D3E /* LoginViewController.swift */,
@@ -227,9 +236,12 @@
 			files = (
 				F3617CD42228FAB1007E4D3E /* HomeViewController.swift in Sources */,
 				F3617CD02228FA70007E4D3E /* LoginViewController.swift in Sources */,
+				F3831F802229D89500001E66 /* QuestionViewController.swift in Sources */,
+				F3831F822229D89D00001E66 /* ResultsViewController.swift in Sources */,
 				F3617CBE2228AFEC007E4D3E /* StartviewController.swift in Sources */,
 				F3617CD22228FA94007E4D3E /* SignUpViewController.swift in Sources */,
 				F3617CBC2228AFEC007E4D3E /* AppDelegate.swift in Sources */,
+				F3831F84222AAF2400001E66 /* QuestionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
