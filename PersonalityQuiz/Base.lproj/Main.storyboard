@@ -638,6 +638,10 @@
                     <navigationItem key="navigationItem" title="Results" id="ZO3-BC-RPo">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="SV5-oO-fNB"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="ko3-gL-rWn" id="E0L-wg-uug"/>
+                        <outlet property="resultDefinitionLabel" destination="maS-zI-ccq" id="gGL-gP-uCC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UP5-V3-PzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

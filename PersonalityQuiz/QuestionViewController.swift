@@ -64,7 +64,15 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        calculatePersonalityResult()
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answerChosen
+        }
     }
     
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
@@ -179,6 +187,19 @@ class QuestionViewController: UIViewController {
         } else {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
         }
+    }
+    
+    func calculatePersonalityResult() {
+        var frequencyOfAnswers: [AnimalType: Int] = [:]
+        
+        let responseTypes = responses.map { $0.type }
+        
+        for response in responseTypes {
+            frequencyOfAnswers[response] = (frequencyOfAnswers[response] ?? 0) + 1
+        }
+        
+        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) -> Bool in return pair1.value > pair2.value})
+        let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
     }
 
 }

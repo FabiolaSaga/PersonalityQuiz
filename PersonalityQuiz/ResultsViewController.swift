@@ -9,6 +9,12 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    
+    @IBOutlet weak var resultAnswerLabel: UILabel!
+    @IBOutlet weak var resultDefinitionLabel: UILabel!
+    
+    
+    var responses: [Answer]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
