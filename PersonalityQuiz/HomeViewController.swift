@@ -8,16 +8,45 @@
 
 import UIKit
 import FirebaseAuth
+import AVFoundation
+import AVKit
+
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var logOut: UIButton!
+    @IBOutlet weak var videoView: UIView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    private func setUpView() {
+        let path = URL(fileURLWithPath: Bundle.main.path(forResource: "Drinking beer", ofType: "mp4")!)
+        let player = AVPlayer(url: path)
+        
+        let newLayer = AVPlayerLayer(player: player)
+        newLayer.frame = self.videoView.frame
+        self.videoView.layer.addSublayer(newLayer)
+        newLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        
+        player.play()
+    }
+
     
     @IBAction func logOutAction(_ sender: Any) {
         do {

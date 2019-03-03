@@ -71,7 +71,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0013312070960000001" green="0.11401677740000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Iyg-G6-fe7" secondAttribute="bottom" constant="20" id="2JH-82-U0z"/>
                             <constraint firstItem="Iyg-G6-fe7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyT-Lr-irs"/>
@@ -158,7 +158,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0013312070960000001" green="0.11401677740000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kGF-Jp-aZb" firstAttribute="top" secondItem="twy-Ke-7Mp" secondAttribute="top" constant="146" id="G4z-WK-sN3"/>
                             <constraint firstItem="kGF-Jp-aZb" firstAttribute="centerX" secondItem="h7o-PK-iWt" secondAttribute="centerX" id="szu-Bh-Glh"/>
@@ -250,7 +250,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0013312070960000001" green="0.11401677740000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0mV-yw-tV2" firstAttribute="top" secondItem="76s-ER-ci3" secondAttribute="top" constant="146" id="l23-U6-TKQ"/>
                             <constraint firstItem="0mV-yw-tV2" firstAttribute="centerX" secondItem="udO-pX-mgr" secondAttribute="centerX" id="w96-po-gyd"/>
@@ -277,21 +277,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGA-dH-Cw2" userLabel="Video View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7MG-Po-1bu"/>
+                                    <constraint firstAttribute="height" constant="667" id="sAL-Oc-kDq"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dYL-Il-Y46">
                                 <rect key="frame" x="62.5" y="259.5" width="250" height="148"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which animal are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKj-Ec-8Ia">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Beer are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKj-Ec-8Ia">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="98"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="2" height="1"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbY-fX-cdD" userLabel="Start Button View">
                                         <rect key="frame" x="0.0" y="98" width="250" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jws-Sc-OmK">
                                                 <rect key="frame" x="69" y="5" width="112" height="39"/>
-                                                <color key="backgroundColor" red="0.0013312070960000001" green="0.11401677740000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="Bev-ad-Jyg"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="JPn-ny-53l"/>
@@ -313,7 +323,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Jws-Sc-OmK" secondAttribute="bottom" constant="5" id="20N-mA-sVL"/>
                                             <constraint firstItem="Jws-Sc-OmK" firstAttribute="leading" secondItem="GbY-fX-cdD" secondAttribute="leading" constant="4" id="FZK-7k-fZ4"/>
@@ -332,8 +341,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-29-U99">
                                 <rect key="frame" x="278" y="601" width="81" height="37"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="logOutAction:" destination="FiY-gE-FOt" eventType="touchUpInside" id="7yl-Ua-jEU"/>
@@ -342,15 +353,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LGA-dH-Cw2" firstAttribute="leading" secondItem="09S-ro-kxV" secondAttribute="leading" id="0MD-bO-oJE"/>
+                            <constraint firstAttribute="bottom" secondItem="LGA-dH-Cw2" secondAttribute="bottom" id="FVm-bI-l0a"/>
+                            <constraint firstItem="LGA-dH-Cw2" firstAttribute="top" secondItem="09S-ro-kxV" secondAttribute="top" id="Mro-Yo-jlz"/>
+                            <constraint firstItem="LGA-dH-Cw2" firstAttribute="centerX" secondItem="09S-ro-kxV" secondAttribute="centerX" id="NQP-A5-b0Y"/>
                             <constraint firstItem="dYL-Il-Y46" firstAttribute="centerX" secondItem="09S-ro-kxV" secondAttribute="centerX" id="Q7k-zM-amT"/>
                             <constraint firstItem="cLW-i1-3la" firstAttribute="bottom" secondItem="ZLo-29-U99" secondAttribute="bottom" constant="29" id="U6o-Oh-SVW"/>
+                            <constraint firstItem="LGA-dH-Cw2" firstAttribute="centerY" secondItem="09S-ro-kxV" secondAttribute="centerY" id="cOl-AR-19h"/>
                             <constraint firstItem="dYL-Il-Y46" firstAttribute="centerY" secondItem="09S-ro-kxV" secondAttribute="centerY" id="hyH-pC-lha"/>
+                            <constraint firstAttribute="trailing" secondItem="LGA-dH-Cw2" secondAttribute="trailing" id="sF6-Rl-ZsC"/>
                             <constraint firstItem="cLW-i1-3la" firstAttribute="trailing" secondItem="ZLo-29-U99" secondAttribute="trailing" constant="16" id="vLe-gz-Ocw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cLW-i1-3la"/>
                     </view>
                     <connections>
                         <outlet property="logOut" destination="ZLo-29-U99" id="89t-6h-12L"/>
+                        <outlet property="videoView" destination="LGA-dH-Cw2" id="JIH-aQ-Mol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9g-TI-yE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -697,7 +715,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6qQ-n9-ZNu"/>
-        <segue reference="cq8-R7-qK6"/>
+        <segue reference="7dN-LZ-5XO"/>
         <segue reference="QOm-or-q5o"/>
         <segue reference="W65-Dd-atH"/>
     </inferredMetricsTieBreakers>

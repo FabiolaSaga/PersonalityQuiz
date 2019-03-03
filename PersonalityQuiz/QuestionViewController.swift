@@ -41,23 +41,23 @@ class QuestionViewController: UIViewController {
     var answerChosen: [Answer] = []
     
     var questions: [Question] = [
-        Question(text: "Which food do you like the most?", type: .single, answers: [
-           Answer(text: "Steak", type: .dog),
-           Answer(text: "Fish", type: .cat),
-           Answer(text: "Carrots", type: .rabbit),
-           Answer(text: "Corn", type: .turtle)
+        Question(text: "Which season do you prefer?", type: .single, answers: [
+           Answer(text: "Spring", type: .lager),
+           Answer(text: "Summer", type: .ipa),
+           Answer(text: "Fall", type: .saison),
+           Answer(text: "Winter", type: .stout)
             ]),
-        Question(text: "Which activities do you enjoy?", type: .multiple, answers: [
-            Answer(text: "Swimming", type: .turtle),
-            Answer(text: "Sleeping", type: .cat),
-            Answer(text: "Cuddling", type: .rabbit),
-            Answer(text: "Eating", type: .dog)
+        Question(text: "If you can't have beer, you'll have...", type: .multiple, answers: [
+            Answer(text: "Bourbon", type: .stout),
+            Answer(text: "Tequila", type: .ipa),
+            Answer(text: "Fruity Drink", type: .saison),
+            Answer(text: "Water", type: .lager)
             ]),
-        Question(text: "How much do you enjoy car rides?", type: .ranged, answers: [
-            Answer(text: "Hate them", type: .cat),
-            Answer(text: "I get a little nervous", type: .rabbit),
-            Answer(text: "I barely notice them", type: .turtle),
-            Answer(text: "I love them!", type: .dog)
+        Question(text: "Why do you drink beer?", type: .ranged, answers: [
+            Answer(text: "Tastes good", type: .ipa),
+            Answer(text: "I want to relax", type: .saison),
+            Answer(text: "It's cold outside", type: .stout),
+            Answer(text: "It's cheap!", type: .lager)
             ])
     ]
 
