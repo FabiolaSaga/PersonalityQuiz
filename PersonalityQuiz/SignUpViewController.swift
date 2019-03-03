@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.HideKeyboard()
         // Do any additional setup after loading the view.
     }
     

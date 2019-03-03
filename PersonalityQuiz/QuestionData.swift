@@ -37,10 +37,10 @@ struct Answer{
 }
 
 enum AnimalType: String {
-    case lager = "LAGER"
-    case ipa = "IPA"
-    case saison = "SAISON"
-    case stout = "STOUT"
+    case lager = "a LAGER"
+    case ipa = "an IPA"
+    case saison = "a SAISON"
+    case stout = "a STOUT"
     
     var definition: String {
         switch self {

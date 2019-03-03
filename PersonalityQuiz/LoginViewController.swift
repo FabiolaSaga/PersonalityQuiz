@@ -9,6 +9,20 @@
 import UIKit
 import FirebaseAuth
 
+extension UIViewController {
+    
+    func HideKeyboard() {
+        let Tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
+        
+        view.addGestureRecognizer(Tap)
+    }
+    
+    @objc func DismissKeyboard() {
+        
+        view.endEditing(true)
+    }
+}
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var email: UITextField!
@@ -16,9 +30,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.HideKeyboard()
         // Do any additional setup after loading the view.
     }
+    
+    
     
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
